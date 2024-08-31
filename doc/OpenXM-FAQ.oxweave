@@ -292,7 +292,7 @@ http://www.math.sci.kobe-u.ac.jp/OpenXM/Current/anonymous.html
 
 /*&en
 
-A. Repalce OpenXM_contrib/gmp (version 4.1.2) by the gmp version 3.1.1 
+A. Replace OpenXM_contrib/gmp (version 4.1.2) by the gmp version 3.1.1 
 as follows.
 
 rm -rf OpenXM_contrib/gmp
@@ -304,7 +304,7 @@ http://www.math.sci.kobe-u.ac.jp/OpenXM/Current/anonymous.html
 */
 
 
-//&C Nov 15, 2003 (For developpers)
+//&C Nov 15, 2003 (For developers)
 //&ja Q. Cvs で commit するとき -m option がうまく動きません.
 //&en Q. The -m option for cvs commit does not work well.
 

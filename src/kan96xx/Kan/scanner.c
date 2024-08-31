@@ -246,7 +246,7 @@ struct tokens getokenSM(kind,str)
 
   if (kind == OPEN) {
     rnull.token = (char *)NULL; rnull.kind = -2;
-    /* -2: suceeded,  -3: fail */
+    /* -2: succeeded,  -3: fail */
     myungetchar(c);
     FileStack[FileStackP++] = Cfp;  /* push the current file */
     if (FileStackP >= FILESTACK_LIMIT) {

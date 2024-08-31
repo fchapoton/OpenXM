@@ -237,7 +237,7 @@ def c_z(F,E,Level)
   if ( N == E ) return [F];
   M = field_order_ff(); K = idiv(N,E); L = [F];
   while ( 1 ) {
-    /* gererate a random polynomial */
+    /* generate a random polynomial */
     W = monic_randpoly_ff(2*E,V);
     /* compute a power of the random polynomial */
     T = generic_pwrmod_ff(W,F,idiv(M^E-1,2));

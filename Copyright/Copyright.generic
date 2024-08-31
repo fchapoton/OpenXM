@@ -9,7 +9,7 @@ $OpenXM: OpenXM/Copyright/Copyright.generic,v 1.5 2000/01/20 18:52:35 ohara Exp 
 # This is a generic copyright notice for the OpenXM package.
 # This copyright is applied to all sources, documents, 
 # and binaries of the OpenXM package
-# unless an overriden copyright notice appears in subdirectories.
+# unless an overridden copyright notice appears in subdirectories.
 #
 #
 # Redistribution and use in source and binary forms, with or without

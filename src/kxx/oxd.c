@@ -200,7 +200,7 @@ childServerMain(int fd) {
   resultCode = system(ccc);
   fprintf(stderr,"Serial=%d : The following command is finished : %s, resultCode=%d\n",Serial,ccc,resultCode);
   if (resultCode == 0) {
-	fprintf(fp,"<suceeded/>\n"); 
+	fprintf(fp,"<succeeded/>\n"); 
   }else{
 	fprintf(fp,"<failed code=\"%d\"/>\n",resultCode); 
   }

@@ -810,11 +810,11 @@ def check8() {
   F=(x*dx+1-x/(x-1));
   G=((x-1)/(a*x))*x*dx;
   Ans=taka_dr1.mult(F,G) - taka_dr1.mult(((x-1)/(a*x))*x*dx,x*dx);
-  printf("fomula1 = %a\n",Ans);
+  printf("formula1 = %a\n",Ans);
   /* formula 2 */
   F=((x-1)/(a*x))*x*dx;
   Ans=taka_dr1.mult(F,1-x)-((1-x)*((x-1)/(a*x))*x*dx-(x-1)/a);
-  printf("fomula2 = %a\n",Ans);
+  printf("formula2 = %a\n",Ans);
   /* formula 1' */
 }
 /* 2014.05.06 */

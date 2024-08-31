@@ -154,7 +154,7 @@ public class oxdStream {
 		ans = readUntil('?');
 		System.err.println(ans);
 		write("<login/>\n");
-		if (getTagName(ans).equals("suceeded")) {
+		if (getTagName(ans).equals("succeeded")) {
 		  
 		}else{
 		  throw new IOException("OX server could not be started.");

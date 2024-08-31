@@ -371,7 +371,7 @@
 \renewcommand{\l@paragraph}{\@dottedtocline{6}{7.0em}{4.1em}}
 \renewcommand{\l@subparagraph}{\@dottedtocline{7}{10em}{5em}}
 \IfPrepare{\typeout{**** Paper in preparation ****}}{}
-\IfSubmit{\typeout{**** Sumbitted paper ****}}{}
+\IfSubmit{\typeout{**** Submitted paper ****}}{}
 \IfAccept{\typeout{**** Accepted paper ****}}{}
 \IfPublish{\typeout{**** Published in proceedings ****}}{}
 \IfPrint{\typeout{****  Published paper printed outside

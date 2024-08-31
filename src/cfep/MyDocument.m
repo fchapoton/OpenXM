@@ -416,7 +416,7 @@ static NSMenuItem *menuItemPrettyPrint = nil;  // prettyPrint.
       [self messageDialog: NSLocalizedString(@"Error: Engine is not responding.",nil) with: 0];
 	  return -1;
   } @finally {
-      NSLog(@"writeData suceeded.\n");
+      NSLog(@"writeData succeeded.\n");
   }
   // [NSThread sleepUntilDate: [NSDate dateWithTimeIntervalSinceNow: 10.0]];
   NSLog(@"\nDone.\n");

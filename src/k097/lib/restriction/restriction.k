@@ -26,7 +26,7 @@ def DeRham2(f) {
   local s;
   s = ToString(f);
   II = Sannfs(f,"x,y");
-  Println("Step 1: Annhilating ideal (II)"); Println(II);
+  Println("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II 0 get { [(x) (y) (Dx) (Dy) ] laplace0 } map /II set ");
   Sweyl("x,y",[["x",-1,"y",-1,"Dx",1,"Dy",1]]);
   pp = Map(II,"Spoly");
@@ -46,7 +46,7 @@ def DeRham3(f) {
   local s;
   s = ToString(f);
   II = Sannfs(f,"x,y,z");
-  Print("Step 1: Annhilating ideal (II)"); Println(II);
+  Print("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II 0 get { [(x) (y) (z) (Dx) (Dy) (Dz)] laplace0 } map /II set ");
   Sweyl("x,y,z",[["x",-1,"y",-1,"z",-1,"Dx",1,"Dy",1,"Dz",1]]);
   pp = Map(II,"Spoly");
@@ -66,7 +66,7 @@ def DeRham1(f) {
   local s;
   s = ToString(f);
   II = Sannfs(f,"x");
-  Println("Step 1: Annhilating ideal (II)"); Println(II);
+  Println("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II 0 get { [(x) (Dx) ] laplace0 } map /II set ");
   Sweyl("x",[["x",-1,"Dx",1]]);
   pp = Map(II,"Spoly");
@@ -92,7 +92,7 @@ def nonquasi(p,q) {
   sm1(" s [(s) (x) (y)] genericAnn /ans set ");
   sm1(" ans 0 get (ring) dc ring_def ");
   sm1("[ ans { [[(s). (-1).]] replace } map ] /II set ");
-  Println("Step 1: Annhilating ideal (II)"); Println(II);
+  Println("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II 0 get { [(x) (y) (Dx) (Dy) ] laplace0 } map /II set ");
   Sweyl("x,y",[["x",-1,"y",-1,"Dx",1,"Dy",1]]);
   pp = Map(II,"Spoly");

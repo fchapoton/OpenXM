@@ -105,7 +105,7 @@ def asirAnnXYZ(a,f) {
   RingD("x,y,z,s");  /* Fix!! See the definition of myann() */
   p = ToString(f);
   b = a.rpc("myann",[p]);
-  Print("Annhilating ideal with s is "); Println(b);
+  Print("Annihilating ideal with s is "); Println(b);
   b0 = asirBfunction(a,f);
   Print("bfunction is "); Println(b0);
   k1 = findMinSol(b0);
@@ -128,7 +128,7 @@ def nonquasi2(p,q) {
   ans = asirAnnfsXYZ(asssssir,f);
   sm1(" ans 0 get (ring) dc ring_def ");
   sm1("[ ans { [[(s). (-1).]] replace } map ] /II set ");
-  Println("Step 1: Annhilating ideal (II)"); Println(II);
+  Println("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II 0 get { [(x) (y) (Dx) (Dy) ] laplace0 } map /II set ");
   Sweyl("x,y",[["x",-1,"y",-1,"Dx",1,"Dy",1]]);
   pp = Map(II,"Spoly");
@@ -154,7 +154,7 @@ def asirAnn0XYZ(a,f) {
   RingD("x,y,z,s");  /* Fix!! See the definition of myann() */
   p = ToString(f);
   b = a.rpc("myann0",[p]);
-  Print("Annhilating ideal of f^r is "); Println(b);
+  Print("Annihilating ideal of f^r is "); Println(b);
   return(b);
 }
 
@@ -166,7 +166,7 @@ def DeRham2WithAsir(f) {
 
   s = ToString(f);
   II = asirAnn0XYZ(asssssir,f);
-  Print("Step 1: Annhilating ideal (II)"); Println(II);
+  Print("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II  { [(x) (y) (Dx) (Dy) ] laplace0 } map /II set ");
   Sweyl("x,y",[["x",-1,"y",-1,"Dx",1,"Dy",1]]);
   pp = Map(II,"Spoly");
@@ -194,7 +194,7 @@ def DeRham3WithAsir(f) {
 
   s = ToString(f);
   II = asirAnn0XYZ(asssssir,f);
-  Print("Step 1: Annhilating ideal (II)"); Println(II);
+  Print("Step 1: Annihilating ideal (II)"); Println(II);
   sm1(" II  { [(x) (y) (z) (Dx) (Dy) (Dz)] laplace0 } map /II set ");
   Sweyl("x,y,z",[["x",-1,"y",-1,"z",-1,"Dx",1,"Dy",1,"Dz",1]]);
   pp = Map(II,"Spoly");

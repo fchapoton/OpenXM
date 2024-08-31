@@ -118,7 +118,7 @@ public OpenXM(String ox_server) throws IOException {
 		oxd.write("<bye/>");
 	}
 
-	System.err.println("Listenning...");
+	System.err.println("Listening...");
 
 	oxd.startPhase2(ox_server,cport);
 	

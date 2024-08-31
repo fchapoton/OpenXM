@@ -138,7 +138,7 @@ A.
     The files openxm, asir, oxmath are shell scripts to invoke OpenXM clients.
     For example, if you input  
        openxm asir
-    then asir starts in the OpenXM enviroment.
+    then asir starts in the OpenXM environment.
     If you want to install these shell scripts to /usr/local/bin,
     type in as follows.
 
@@ -339,7 +339,7 @@ A.
 
   As to Mathematica client, see OpenXM/doc/ox_math.
   As to sm1 client, see OpenXM/doc/kan96xx.
-  The asir can be used as a C library for polynomial manupulation.
+  The asir can be used as a C library for polynomial manipulation.
   See OpenXM/doc/oxlib.
 
   If you are interested in writing a server for OpenXM in C or Java, 
